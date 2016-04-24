@@ -1,0 +1,19 @@
+<div class="extra-guest <%= guest_visibility_css(guest_name) %>" data-guest-num="<%= guest_num %>">
+  <button class="remove-guest std-button">(-) Remove guest</button>
+  <label class="input-section">
+    <h2 class="input-section-title">Guest Name</h2>
+    <%= f.text_field 'guest_' + String(guest_num) + '_name', :class => "text-box"%>
+  </label>
+  <div class="input-section">
+    <h2 class="input-section-title">Meal preference</h2>
+    <label>
+      <%= f.radio_button("guest_" + String(guest_num) + "_meal", "beef") %> Beef
+    </label>
+    <label>
+      <%= f.radio_button("guest_" + String(guest_num) + "_meal", "fish") %> Fish
+    </label>
+    <label>
+      <%= f.radio_button("guest_" + String(guest_num) + "_meal", "vegetarian") %> Vegetarian
+    </label>
+  </div>
+</div>

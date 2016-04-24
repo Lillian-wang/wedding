@@ -1,0 +1,497 @@
+// Place all the styles related to the Wedding controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+h1,h2,h3 {
+	text-transform: uppercase;
+}
+
+h1,p,h2,h3,h4 {
+	text-align:center;
+}
+
+/* Intro Section */
+
+.section {
+    color: rgba(28,13,10,0.65);
+}
+
+.section-mask {
+	background-color:rgba(28,13,10,0.55);
+	overflow: hidden;
+}
+
+#language-toggle {
+	margin: 10px;
+	float: right;
+	background: none;
+	color: #fff;
+	font-size: 16px;
+	border: 0;
+}
+
+#language-toggle:hover {
+	text-decoration: underline;
+}
+
+#couple-name {
+	color: #ff745c;
+	letter-spacing: 0.166667em;
+	margin-top: 70px;
+	font-size: 20px;
+}
+
+#intro-header {
+	margin-top: 320px;
+	letter-spacing: 0.33em;
+	font-size: 50px;
+	font-weight: 700;
+	color:#fff;
+	line-height: 1em;
+}
+
+#rsvp {
+	text-align: center;
+}
+
+#rsvp-button,
+#submit {
+	letter-spacing: 3px;
+	border-radius: 300px;
+	background-color: #fff;
+	border-color: #fff;
+	height:50px;
+	padding: 0 50px;
+	font-size: 16px;
+	transition: opacity .5s;
+}
+
+#rsvp-button:hover {
+	opacity: 0.8;
+}
+
+#rsvp-form .input-section-title {
+	display: block;
+	text-align: left;
+	font-size: 20px;
+	text-transform: initial;
+	font-weight: normal;
+	margin: 0 0 10px 0;
+}
+
+#rsvp-form .input-section {
+	display: block;
+}
+
+#rsvp-form .input-section,
+.extra-guest:last-child,
+#add-extra-guest {
+	margin-bottom: 30px;	
+}
+
+#add-extra-guest {
+	font-size: 16px;
+}
+
+
+#rsvp-form .input-section:last-child {
+	margin-bottom: 0;
+}
+
+label p {
+	text-align: left;
+}
+
+#form-submission-message {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	text-align: center;
+}
+
+#form-submission-message:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#form-submission-message p {
+	font-size: 24px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.rsvp-submission-coming #form-submission-message,
+.rsvp-submission-not-coming #form-submission-message,
+.rsvp-submission-error #form-submission-message,
+#rsvp-modal.show {
+	visibility: visible;
+	opacity: 1;
+	transition-delay:0s;
+}
+
+#form-submission-message .coming-to-wedding,
+#form-submission-message .not-coming,
+#form-submission-message .submission-error,  {
+	display: none;
+}
+
+.rsvp-submission-coming #form-submission-message .coming-to-wedding,
+.rsvp-submission-not-coming #form-submission-message .not-coming,
+.rsvp-submission-error #form-submission-message .submission-error {
+	display: inline;
+}
+
+#sub-intro-header {
+	line-height:1em;
+	font-size: 25px;
+	font-weight: lighter;
+	color:#fff;
+	margin-bottom: 80px;
+}
+
+#rsvp {
+	margin-bottom: 350px;
+}
+
+#intro {
+  background: url("/assets/wedding_photos/shanghai_bw2.JPG") no-repeat top center / cover fixed;    
+}
+
+#rsvp-modal,
+#form-submission-message {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s linear 0.2s,opacity 0.2s ease;
+}
+
+#rsvp-form-mask {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(28,13,10,0.8);
+}	
+
+#rsvp-form {
+	position: absolute;
+	left:100px;
+	right:100px;
+	top:150px;
+	padding-top: 10px;
+	background-color: #fff;
+}
+
+#rsvp-form fieldset {
+	padding: 0 50px;
+	border: 0;
+}
+
+#rsvp-form legend {
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+#attendance-info {
+	display: none;
+}
+
+#attendance-info.show {
+	display: block;
+}
+
+.extra-guest {
+	position: relative;
+	padding: 25px;
+	border: 1px solid #ddd;
+	border-bottom-width: 0;
+}
+
+.extra-guest.not-attending {
+	display: none;
+}
+
+.extra-guest:last-child {
+	border-bottom-width: 1px;
+}
+
+.extra-guest,
+#rsvp-form .extra-guest .text-box,
+#rsvp-form .extra-guest .input-section-title {
+	font-size: 14px;
+	color: rgba(28, 13, 10, 0.65);
+}
+
+.text-box {
+	width: 100%;
+	height: 50px;
+	font-size: 25px;
+	clear: both;
+}
+
+textarea.text-box {
+	height: 100px;
+}
+
+#wishes{
+	height: 150px;
+
+}
+#submit-container {
+	text-align: center;
+}
+#submit {
+	background-color: rgb(255,116,92);
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.first-name-error,
+.last-name-error,
+.email-error,
+.coming-error,
+.bringanyone-error {
+	 color: rgb(255,116,92);
+	 display:none;
+}
+
+
+/* Story Section */
+#story {
+	margin-top: 200px;
+	margin-bottom: 200px;
+	margin-left: 250px;
+	margin-right: 250px;
+    font-size: 17px;
+    line-height: 1.75em;
+}
+
+#story-header {
+	margin-bottom: 60px;
+	font-size: 50px;
+	font-weight: 400;
+	letter-spacing: 3px;
+}
+
+#sub-story-header {
+	color:#ff745c;
+	font-size: 30px;
+}
+
+/* Dates Section */
+
+#date {
+  left:0;
+  right:0;
+  background: url("/assets/wedding_photos/min_ren_jie3.JPG") no-repeat center center fixed;
+  background-size: cover;
+    
+}
+
+#date .section-mask {
+	padding: 280px 0;
+}
+
+#date-header{
+	margin-bottom: 50px;
+	letter-spacing: 3px;
+	font-size: 25px;
+	color: #fff;
+}
+
+#sub-date-header {
+	letter-spacing: 3px;
+	font-size: 55px;
+	color: #fff;
+}
+
+/* Details Section */
+
+#wedding-detail {
+    padding: 200px 0;
+	font-size: 17px;
+	line-height: 1.75em;
+	background-color: #faebe3;
+}
+
+#wedding-detail-content {
+	width: 800px;
+    margin: auto;	
+}
+
+#wedding-detail-ceremony h2,
+#wedding-detail-reception h2 {
+	color:#ff745c;
+}
+
+#wedding-detail-ceremony,
+#wedding-detail-summary {
+	margin-bottom: 80px;
+}
+
+/* Photo gallery */
+
+#photos {
+  background: url("/assets/wedding_photos/pebble_beach3.JPG") no-repeat top center / cover fixed;    
+}
+
+#photos .section-mask {
+	background-color:rgba(28,13,10,0.8);
+}
+
+#photos-content {
+	padding-top: 150px;
+	width: 1000px;
+	margin: auto;
+	font-size: 17px;
+	line-height: 1.75em;
+}
+
+footer {
+	margin-top: 140px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 10px;
+	color: #fff;
+}
+
+#photos-content h1 {
+	color:#fff;
+}
+
+#photos-message {
+	color:#ff745c;
+	margin: 40px 0 80px 0;
+}
+
+.photo-grid-container {
+	width: 880px;
+	margin: auto;
+}
+
+.photo-grid {
+	font-size: 0;
+	margin-left: -10px;
+}
+
+.photo-grid li {
+	display: inline-block;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+.photo-square {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+}
+
+.photo-square.tall img {
+	width:200px;
+	margin-top: -25px;
+}
+
+.photo-square.wide img {
+	height:200px;
+}
+
+.photo-square .photo-square-centering {
+	width: 500px;
+	margin-left: -150px;
+	text-align: center;
+}
+
+#photo-modal-gallery {
+	color: #fff;
+	font-size: 20px;
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-color:rgba(28,13,10,0.8);
+	text-align: center;
+	display: none;
+}
+
+#photo-modal-gallery::before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+
+#photo-modal-gallery img {
+	max-height:600px;
+	max-width: 600px;
+	vertical-align: middle;
+}
+
+.extra-guest .remove-guest {
+	position: absolute;	
+	top: 15px;
+	right: 15px;
+	color: #000;
+}
+
+#close-rsvp {
+	position: absolute;	
+	top: 0;
+    right: 0;
+    color: #000;
+	height:50px;
+	width: 50px;
+	font-size: 30px;
+ }
+
+#photo-modal-gallery button {
+	position: absolute;
+	color: #fff;
+	height:100px;
+	width: 100px;
+	font-size: 30px;
+}
+
+.std-button {
+	background: none;
+	border: none;
+	font-weight: bold;
+	outline: none;
+	transition: opacity .5s;
+}
+
+.std-button :hover {
+	opacity: 0.8;
+}
+
+
+#previous-image {
+	top:50%;
+	margin-top:-50px;
+	left: 10px;
+}
+
+#next-image {
+	top: 50%;
+	margin-top: -50px;
+	right: 10px;
+}
+
+#close-modal {
+	top:10px;
+	right: 10px;
+}
