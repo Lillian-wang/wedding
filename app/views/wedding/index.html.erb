@@ -146,9 +146,9 @@
         <ul class="photo-grid">
           <% @image_gallery.each do |image_info| %>
             <li>
-              <a href="/assets/wedding_photos/<%= image_info[:src] %>" class="photo-square <%= image_info[:dimensions_css] %>">
+              <a href="<%= asset_path('wedding_photos/' + image_info[:src]) %>" class="photo-square <%= image_info[:dimensions_css] %>">
                 <div class="photo-square-centering">
-                  <img src="/assets/wedding_photos/<%= image_info[:src] %>" alt="Wedding Photo">
+                  <img src="<%= asset_path('wedding_photos/' + image_info[:src]) %>" alt="Wedding Photo">
                 </div>
               </a>
             </li>
