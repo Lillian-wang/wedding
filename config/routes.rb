@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  devise_for :admins#, :skip => [:registrations] 
+  mount RailsAdmin::Engine => '/rails_admin', as: 'rails_admin'
   root 'wedding#index'
   patch '/save/:link_code' => 'wedding#save'
   patch '/switch-language/:link_code' => 'wedding#switch_language'

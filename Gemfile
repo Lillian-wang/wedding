@@ -49,3 +49,6 @@ end
 
 # https://github.com/sferik/rails_admin
 gem 'rails_admin'
+
+# Devise Gem
+gem 'devise'
