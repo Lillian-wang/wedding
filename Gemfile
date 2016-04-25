@@ -47,3 +47,5 @@ group :development do
   gem 'spring'
 end
 
+# https://github.com/sferik/rails_admin
+gem 'rails_admin'
