@@ -1,29 +1,31 @@
 <div id="intro" class="section">
   <div class="section-mask">
-    <%= form_for @wedding_invite, url: '/switch-language/' + String(@wedding_invite[:link_code]) do |f| %>
-      <button id="language-toggle">
-        <% if @wedding_invite.language_code == "en" %>
-          中文
-        <% else %>
-          English
-        <% end %>
-      </button>
+    <% if @wedding_invite %>
+      <%= form_for @wedding_invite, url: '/switch-language/' + String(@wedding_invite[:link_code]) do |f| %>
+        <button id="language-toggle">
+          <% if @language_code == "en" %>
+            中文
+          <% else %>
+            English
+          <% end %>
+        </button>
+      <% end %>
     <% end %>
   	<h1 id="couple-name">
-      <% if @wedding_invite.language_code == "en" %>
+      <% if @language_code == "en" %>
         Yining + Yaoli
       <% else %>
         以宁＋瑶莉
       <% end %>
     </h1>
   	<h1 id="intro-header">
-      <% if @wedding_invite.language_code == "en" %>
+      <% if @language_code == "en" %>
         We're getting married
       <% else %>
       <% end %>
     </h1>
   	<h3 id="sub-intro-header">
-      <% if @wedding_invite.language_code == "en" %>
+      <% if @language_code == "en" %>
         July 23, 2016 / Lover's Point / Pacific Grove
       <% else %>
       <% end %>
@@ -31,7 +33,7 @@
     <% if @wedding_invite %>
       <div id="rsvp">
         <button id="rsvp-button">
-          <% if @wedding_invite.language_code == "en" %>
+          <% if @language_code == "en" %>
             RSVP
           <% else %>
           <% end %>
@@ -43,18 +45,18 @@
 
 <div id="story" class="section">
 	<h1 id="story-header">
-    <% if @wedding_invite.language_code == "en" %>
+    <% if @language_code == "en" %>
       Our story
     <% else %>
     <% end %>
   </h1>
 	<h2 id="sub-story-header">
-    <% if @wedding_invite.language_code == "en" %>
+    <% if @language_code == "en" %>
       Love at first sight
     <% else %>
     <% end %>
   </h2>
-  <% if @wedding_invite.language_code == "en" %>
+  <% if @language_code == "en" %>
     <p>
   Yining met Yaoli online in June of 2015. At the time, he was in California working at a tech company called YouTube, and she was in Shanghai working for an American health and research company called IMS. After three months of communicating via email, Yining flew across the ocean to finally meet Yaoli in person. They couldn't believe that the person they met in real life was even more amazing than they could have imagined. Even before saying goodbye after their first dinner together, Yining knew she was the one. The distance in time and space couldn't keep them apart after this as Yining would fly to Shanghai every month on the weekends or holidays to be with Yaoli. Though sometimes the flight alone was almost as long as their time together, they cherished any opportunity to be in each other's arms. They became each other's best friends and true lovers.
   Less than half a year since they met in Shanghai, Yining asked Yaoli to fly to California to be with him and become partners in life. Forever.
@@ -67,13 +69,13 @@
 <div id="date" class="section">
   <div class="section-mask">
   	<h3 id="date-header">
-      <% if @wedding_invite.language_code == "en" %>
+      <% if @language_code == "en" %>
         Save the date
       <% else %>
       <% end %>
     </h3>
   	<h1 id="sub-date-header">
-      <% if @wedding_invite.language_code == "en" %>
+      <% if @language_code == "en" %>
         July 23, 2016
       <% else %>
       <% end %>
@@ -85,13 +87,13 @@
   <div id="wedding-detail-content">
     <div id="wedding-detail-summary">
       <h1>
-        <% if @wedding_invite.language_code == "en" %>
+        <% if @language_code == "en" %>
           Wedding Details
         <% else %>
         <% end %>
       </h1>
       <p>
-        <% if @wedding_invite.language_code == "en" %>
+        <% if @language_code == "en" %>
           We'll have a casual ceremony with refreshments and snacks at Lover's Point in Pacific Grove where Yining grew up followed by a lunch reception at the Beach House right next door!
         <% else %>
         <% end %>
@@ -99,12 +101,12 @@
     </div>
     <div id="wedding-detail-ceremony">
       <h2>
-        <% if @wedding_invite.language_code == "en" %>
+        <% if @language_code == "en" %>
           Ceremony
         <% else %>
         <% end %>
       </h2>
-      <% if @wedding_invite.language_code == "en" %>
+      <% if @language_code == "en" %>
         <p>10:30AM - 12:00AM</p>
         <a target="_blank" href="https://www.google.com/maps/place/Lovers+Point+Park/@36.6264254,-121.9187432,17z/data=!3m1!4b1!4m2!3m1!1s0x808de145db4dcb25:0x48028ef2b9b860bb">
           <p>Lover's Point Park</p>
@@ -114,7 +116,7 @@
       <% end %>
     </div>
     <div id="wedding-detail-reception">
-      <% if @wedding_invite.language_code == "en" %>
+      <% if @language_code == "en" %>
         <h2>Reception</h2>
         <p>12:00AM - 2:30PM</p>
         <p>Beach House at Lover's Point</p>
@@ -129,13 +131,13 @@
   <div class="section-mask">
     <div id="photos-content">
       <h1>
-        <% if @wedding_invite.language_code == "en" %>
+        <% if @language_code == "en" %>
           Photos
         <% else %>
         <% end %>
       </h1>
       <p id="photos-message">
-        <% if @wedding_invite.language_code == "en" %>
+        <% if @language_code == "en" %>
           Thanks for Mom and Dad for helping to setup our wedding and taking beautiful photos for us!
         <% else %>
         <% end %>
@@ -169,21 +171,21 @@
           <legend>RSVP</legend>
           <div class="input-section">
             <h2 class="input-section-title">
-              <% if @wedding_invite.language_code == "en" %>
+              <% if @language_code == "en" %>
                 Hey <%= @wedding_invite[:primary_invitee_name] %>! Will you be joining us for our big day?
               <% else %>
               <% end %>
             </h2>
             <label>
               <%= f.radio_button(:is_coming, "true") %>
-              <% if @wedding_invite.language_code == "en" %>
+              <% if @language_code == "en" %>
                 Yes!
               <% else %>
               <% end %>
             </label>
             <label>
               <%= f.radio_button(:is_coming, "false") %>
-              <% if @wedding_invite.language_code == "en" %>
+              <% if @language_code == "en" %>
                 No
               <% else %>
               <% end %>
@@ -192,28 +194,28 @@
           <div id="attendance-info" class="<%= attendance_info_visibility_css(@wedding_invite[:is_coming]) %>">
             <div class="input-section">
               <h2 class="input-section-title">
-                <% if @wedding_invite.language_code == "en" %>
+                <% if @language_code == "en" %>
                   Please choose a meal preference
                 <% else %>
                 <% end %>
               </h2>
               <label>
                 <%= f.radio_button(:primary_invitee_meal, "beef") %>
-                <% if @wedding_invite.language_code == "en" %>
+                <% if @language_code == "en" %>
                   Beef Stroganoff
                 <% else %>
                 <% end %>
               </label>
               <label>
                 <%= f.radio_button(:primary_invitee_meal, "fish") %>
-                <% if @wedding_invite.language_code == "en" %>
+                <% if @language_code == "en" %>
                   Grilled Salmon Filet
                 <% else %>
                 <% end %>
               </label>
               <label>
                 <%= f.radio_button(:primary_invitee_meal, "vegetarian") %>
-                <% if @wedding_invite.language_code == "en" %>
+                <% if @language_code == "en" %>
                   Vegetarian
                 <% else %>
                 <% end %>
@@ -226,7 +228,7 @@
               <%= render partial: "guest_invite", locals: {f: f, guest_num: 4, guest_name: @wedding_invite["guest_4_name"]}%>
             </div>        
             <button id="add-extra-guest" class="std-button">
-              <% if @wedding_invite.language_code == "en" %>
+              <% if @language_code == "en" %>
                 (+) I'd like to add an extra guest
               <% else %>
               <% end %>
@@ -235,7 +237,7 @@
          
           <label class="input-section">
             <span class="input-section-title">
-              <% if @wedding_invite.language_code == "en" %>
+              <% if @language_code == "en" %>
                 Anything else you'd like us to know about?
               <% else %>
               <% end %>
@@ -244,7 +246,7 @@
           </label>
           <div id="submit-container">
             <button id="submit">
-              <% if @wedding_invite.language_code == "en" %>
+              <% if @language_code == "en" %>
                 Submit
               <% else %>
               <% end %>
@@ -255,19 +257,19 @@
       <button id="close-rsvp" class="std-button">&times;</button> 
       <div id="form-submission-message">
         <p class="coming-to-wedding">
-          <% if @wedding_invite.language_code == "en" %>
+          <% if @language_code == "en" %>
             Thanks! See you at the wedding!
           <% else %>
           <% end %>
         </p>
         <p class="not-coming">
-          <% if @wedding_invite.language_code == "en" %>
+          <% if @language_code == "en" %>
             Sorry you won't be joining us. See you next time.
           <% else %>
           <% end %>
         </p>
         <p class="submission-error">
-          <% if @wedding_invite.language_code == "en" %>
+          <% if @language_code == "en" %>
             An error occured, please try again.
           <% else %>
           <% end %>
@@ -284,3 +286,13 @@
   <img src="" alt="...">
 </div>
 <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76863538-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

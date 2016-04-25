@@ -2,8 +2,10 @@ class WeddingController < ApplicationController
 	def index
 		if params[:link_code]
 			@wedding_invite = WeddingInvite.find_by(link_code: params[:link_code])
+			@language_code = @wedding_invite.language_code
 		else
 			@wedding_invite = nil
+			@language_code = 'en'
 		end
 		@image_gallery = [
 			{
