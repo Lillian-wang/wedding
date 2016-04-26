@@ -43,17 +43,13 @@ var main = function() {
 		$("#previous-image").off('click');
 	}
 	function showNextImage() {
-		console.log(1)
     	var nextImage = currentImage.closest("li").next();	
     	if (nextImage.length == 0) {
     		return;
     	}
-    	console.log(2)
     	var nextImageURL= nextImage.find(".photo-square").attr("href");
     	currentImage = nextImage ;
-    	console.log(3)
     	$("#photo-modal-gallery img").attr("src",nextImageURL);
-    	console.log(4, nextImageURL);
      }
 	function showPreviousImage(){
     	var previousImage = currentImage.closest("li").prev();	
@@ -122,7 +118,6 @@ var main = function() {
 	        data: valuesToSubmit,
 	        dataType: "JSON" // you want a difference between normal and ajax-calls, and json is standard
 	    }).success(function(json){
-	        console.log("success", json);
 	        if (json['is_coming']) {
 	        	$("#rsvp-modal").addClass('rsvp-submission-coming');
 	        } else {
@@ -160,7 +155,6 @@ var main = function() {
 	            preload(imageArray, index + 1);
 	        }
 	        img.src = $(preloadedImageLinks[index]).attr('href');
-	        console.log(img.src);
 		}
 	};
 	/* images is an array with image metadata */
