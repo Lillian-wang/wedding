@@ -136,6 +136,38 @@ var main = function() {
 		return false;
 	});
 
+	// Image Delay Loading
+	// Background CSS Image Loading
+	var delayLoadedBgImages = $('.lazy-load-bg');
+	delayLoadedBgImages.each(function() {
+		var el = $(this);
+		var bgImageUrl = el.data('bg-url');
+		el.css('background-image', bgImageUrl);
+
+	});
+	// Image src Loading
+	$('.delay-loaded-image').each(function() {
+		var el = $(this);
+		var src = el.data('delayed-src');
+		el.attr('src', src);
+	});
+	// Preload image gallery
+	function preload(imageArray, index) {
+	    index = index || 0;
+	    if (imageArray && imageArray.length > index) {
+        var img = new Image ();
+        img.onload = function() {
+	            preload(imageArray, index + 1);
+	        }
+	        img.src = $(preloadedImageLinks[index]).attr('href');
+	        console.log(img.src);
+		}
+	};
+	/* images is an array with image metadata */
+	var preloadedImageLinks = $(".photo-grid a");
+	setTimeout(function() {
+		preload(preloadedImageLinks);
+	}, 2000);
 }
 
 $(document).ready(main);

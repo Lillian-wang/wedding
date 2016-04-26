@@ -1,19 +1,52 @@
 <div class="extra-guest <%= guest_visibility_css(guest_name) %>" data-guest-num="<%= guest_num %>">
-  <button class="remove-guest std-button">(-) Remove guest</button>
+  <button class="remove-guest std-button">
+    <% if @language_code == "en" %>
+      (-) Remove guest
+    <% else %>
+      (-) 取消客人
+    <% end %>
+  </button>
   <label class="input-section">
-    <h2 class="input-section-title">Guest Name</h2>
+    <h2 class="input-section-title">
+      <% if @language_code == "en" %>
+        Guest Name
+      <% else %>
+        客人姓名
+      <% end %>
+    </h2>
     <%= f.text_field 'guest_' + String(guest_num) + '_name', :class => "text-box"%>
   </label>
   <div class="input-section">
-    <h2 class="input-section-title">Meal preference</h2>
+    <h2 class="input-section-title">
+      <% if @language_code == "en" %>
+        Meal preference
+      <% else %>
+        请为他／她选择一道合适的菜
+      <% end %>
+    </h2>
     <label>
-      <%= f.radio_button("guest_" + String(guest_num) + "_meal", "beef") %> Beef
+      <%= f.radio_button("guest_" + String(guest_num) + "_meal", "beef") %>
+      <% if @language_code == "en" %>
+        Beef Stroganoff
+      <% else %>
+      俄式炒牛肉
+      <% end %>
     </label>
     <label>
-      <%= f.radio_button("guest_" + String(guest_num) + "_meal", "fish") %> Fish
+      <%= f.radio_button("guest_" + String(guest_num) + "_meal", "fish") %>
+      <% if @language_code == "en" %>
+        Grilled Salmon Filet
+      <% else %>
+      烤三文鱼
+      <% end %>
     </label>
     <label>
-      <%= f.radio_button("guest_" + String(guest_num) + "_meal", "vegetarian") %> Vegetarian
+      <%= f.radio_button("guest_" + String(guest_num) + "_meal", "vegetarian") %>
+      <% if @language_code == "en" %>
+        Vegetarian
+      <% else %>
+      素食
+      <% end %>
     </label>
   </div>
 </div>

@@ -33,7 +33,7 @@ class WeddingController < ApplicationController
 				'dimensions_css': 'tall' 
 			},
 			{
-				'src': 'shanghai_outdoors.jpg',
+				'src': 'pebble_beach4.jpg',
 				'dimensions_css': 'wide' 
 			},
 			{
@@ -41,8 +41,8 @@ class WeddingController < ApplicationController
 				'dimensions_css': 'wide' 
 			},
 			{
-				'src': 'ming_guo3.jpg',
-				'dimensions_css': 'tall' 
+				'src': 'carmel_beach.jpg',
+				'dimensions_css': 'wide right-aligned' 
 			},
 			{
 				'src': 'shanghai_bw1.jpg',
@@ -57,7 +57,7 @@ class WeddingController < ApplicationController
 				'dimensions_css': 'tall' 
 			},
 			{
-				'src': 'pebble_beach4.jpg',
+				'src': 'shanghai_outdoors.jpg',
 				'dimensions_css': 'wide' 
 			},
 			{
@@ -65,8 +65,8 @@ class WeddingController < ApplicationController
 				'dimensions_css': 'wide' 
 			},
 			{
-				'src': 'carmel_beach.jpg',
-				'dimensions_css': 'wide right-aligned' 
+				'src': 'ming_guo3.jpg',
+				'dimensions_css': 'tall' 
 			},
 			{
 				'src': 'lone_cypress.jpg',

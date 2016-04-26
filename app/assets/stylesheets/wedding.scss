@@ -296,7 +296,7 @@ textarea.text-box {
 #date {
   left:0;
   right:0;
-  background: image-url("dates_bg-min.JPG") no-repeat center center fixed;
+  background: no-repeat center center fixed;
   background-size: cover;
     
 }
@@ -345,7 +345,7 @@ textarea.text-box {
 /* Photo gallery */
 
 #photos {
-  background: image-url("photos_bg-min.JPG") no-repeat top center / cover fixed;    
+  background: no-repeat top center / cover fixed;    
 }
 
 #photos .section-mask {
