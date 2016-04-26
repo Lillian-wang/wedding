@@ -22,12 +22,14 @@
       <% if @language_code == "en" %>
         We're getting married
       <% else %>
+      我们结婚啦！
       <% end %>
     </h1>
   	<h3 id="sub-intro-header">
       <% if @language_code == "en" %>
         July 23, 2016 / Lover's Point / Pacific Grove
       <% else %>
+      2016年7月23号／情人角／帕西菲克格罗夫
       <% end %>
     </h3>
     <% if @wedding_invite %>
@@ -36,6 +38,7 @@
           <% if @language_code == "en" %>
             RSVP
           <% else %>
+          请回复
           <% end %>
         </button>
       </div>
@@ -48,21 +51,27 @@
     <% if @language_code == "en" %>
       Our story
     <% else %>
+    我们的故事
     <% end %>
   </h1>
 	<h2 id="sub-story-header">
     <% if @language_code == "en" %>
       Love at first sight
     <% else %>
+    一见钟情
     <% end %>
   </h2>
   <% if @language_code == "en" %>
     <p>
-  Yining met Yaoli online in June of 2015. At the time, he was in California working at a tech company called YouTube, and she was in Shanghai working for an American health and research company called IMS. After three months of communicating via email, Yining flew across the ocean to finally meet Yaoli in person. They couldn't believe that the person they met in real life was even more amazing than they could have imagined. Even before saying goodbye after their first dinner together, Yining knew she was the one. The distance in time and space couldn't keep them apart after this as Yining would fly to Shanghai every month on the weekends or holidays to be with Yaoli. Though sometimes the flight alone was almost as long as their time together, they cherished any opportunity to be in each other's arms. They became each other's best friends and true lovers.
+  Yining met Yaoli online in June of 2015. At the time, he was in California working at a tech company called YouTube, and she was in Shanghai working for IMS-an American information and technology company specialized in the healthcare industry. After three months of communicating via email, Yining flew across the ocean to finally meet Yaoli in person. They couldn't believe that the person they met in real life was even more amazing than they could have imagined. Even before saying goodbye after their first dinner together, Yining knew she was the one. The distance in time and space couldn't keep them apart after this as Yining would fly to Shanghai every month on the weekends or holidays to be with Yaoli. Though sometimes the flight alone was almost as long as their time together, they cherished any opportunity to be in each other's arms. They became each other's best friends and true lovers.
   Less than half a year since they met in Shanghai, Yining asked Yaoli to fly to California to be with him and become partners in life. Forever.
     </p>
     <p>We're ready to make it official now!</p>
   <% else %>
+  以宁和瑶莉于2015年6月在网络上相识。彼时，他在旧金山为YouTube工作，她在上海为IMS工作(一家为医药健康产业提供专业信息和战略咨询的美资公司)。经过三个月的邮件沟通，以宁最终决定跨越太平洋，带着期许和好奇，亲自和瑶莉见面。未曾预料到现实超越了彼此的想象，甚至在他们的第一顿晚餐结束之前，以宁已确定了，“就是她”。纵使相隔万里，还有十多小时的时差，但时空都不能阻隔他们。不管多忙，以宁每个月都会抽时间在周末或者假期飞到上海陪伴瑶莉，有时在飞机上的时间都超过了他们短暂的相聚。相识与相见的不易，让他们更珍惜这段缘分，在一起的分分秒秒是他们最大的财富。相识半年后，以宁邀请瑶莉来到加州，以期结为终身伴侣，永远相随。
+  现在，他们准备好了，向大家正式宣布：
+  我们要结婚了，敬请各位参加我们的婚礼！
+
   <% end %>
 </div>
 
@@ -72,12 +81,14 @@
       <% if @language_code == "en" %>
         Save the date
       <% else %>
+      敬请惠存
       <% end %>
     </h3>
   	<h1 id="sub-date-header">
       <% if @language_code == "en" %>
         July 23, 2016
       <% else %>
+      2016年7月23号
       <% end %>
     </h1>
   </div>
@@ -90,12 +101,14 @@
         <% if @language_code == "en" %>
           Wedding Details
         <% else %>
+        婚礼流程
         <% end %>
       </h1>
       <p>
         <% if @language_code == "en" %>
           We'll have a casual ceremony with refreshments and snacks at Lover's Point in Pacific Grove where Yining grew up followed by a lunch reception at the Beach House right next door!
         <% else %>
+          我们将在帕西菲克格罗夫的情人角（以宁长大的地方）举行仪式，并会在现场提供点心和小吃，中午会在旁边的海滨小屋内进行午宴
         <% end %>
       </p>
     </div>
@@ -104,6 +117,7 @@
         <% if @language_code == "en" %>
           Ceremony
         <% else %>
+        仪式
         <% end %>
       </h2>
       <% if @language_code == "en" %>
@@ -113,6 +127,11 @@
           <p>Pacific Grove,CA</p>
         </a>
       <% else %>
+        <p>10:30AM - 12:00AM</p>
+        <a target="_blank" href="https://www.google.com/maps/place/Lovers+Point+Park/@36.6264254,-121.9187432,17z/data=!3m1!4b1!4m2!3m1!1s0x808de145db4dcb25:0x48028ef2b9b860bb">
+          <p>情人角</p>
+          <p>加利福尼亚州，帕西菲克格罗夫</p>
+        </a>
       <% end %>
     </div>
     <div id="wedding-detail-reception">
@@ -122,6 +141,10 @@
         <p>Beach House at Lover's Point</p>
         <p>620 Ocean View Boulevard, Pacific Grove, California</p>
       <% else %>
+      <h2>餐宴</h2>
+        <p>12:00AM - 2:30PM</p>
+        <p>海滨小屋</p>
+        <p>加利福尼亚州，帕西菲克格罗夫，海景大道620号 </p>
       <% end %>
     </div>
   </div>
@@ -134,12 +157,14 @@
         <% if @language_code == "en" %>
           Photos
         <% else %>
+        照片
         <% end %>
       </h1>
       <p id="photos-message">
         <% if @language_code == "en" %>
           Thanks for Mom and Dad for helping to setup our wedding and taking beautiful photos for us!
         <% else %>
+        谢谢爸爸妈妈帮我们准备婚礼，每次旅行都为我们拍照。
         <% end %>
       </p>
       <div class="photo-grid-container">
@@ -148,7 +173,7 @@
             <li>
               <a href="<%= asset_path('wedding_photos/' + image_info[:src]) %>" class="photo-square <%= image_info[:dimensions_css] %>">
                 <div class="photo-square-centering">
-                  <img src="<%= asset_path('wedding_photos/' + image_info[:src]) %>" alt="Wedding Photo">
+                  <img src="<%= asset_path('thumbnails/' + image_info[:src]) %>" alt="Wedding Photo">
                 </div>
               </a>
             </li>
@@ -174,6 +199,7 @@
               <% if @language_code == "en" %>
                 Hey <%= @wedding_invite[:primary_invitee_name] %>! Will you be joining us for our big day?
               <% else %>
+              您会来参加我们的婚礼吗？
               <% end %>
             </h2>
             <label>
@@ -181,6 +207,7 @@
               <% if @language_code == "en" %>
                 Yes!
               <% else %>
+              是的，我会参加
               <% end %>
             </label>
             <label>
@@ -188,6 +215,7 @@
               <% if @language_code == "en" %>
                 No
               <% else %>
+              很遗憾，不能参加
               <% end %>
             </label>
           </div>
@@ -197,6 +225,7 @@
                 <% if @language_code == "en" %>
                   Please choose a meal preference
                 <% else %>
+                请选择一个您喜欢的菜单
                 <% end %>
               </h2>
               <label>
@@ -204,6 +233,7 @@
                 <% if @language_code == "en" %>
                   Beef Stroganoff
                 <% else %>
+                俄式炒牛肉
                 <% end %>
               </label>
               <label>
@@ -211,6 +241,7 @@
                 <% if @language_code == "en" %>
                   Grilled Salmon Filet
                 <% else %>
+                烤三文鱼
                 <% end %>
               </label>
               <label>
@@ -218,6 +249,7 @@
                 <% if @language_code == "en" %>
                   Vegetarian
                 <% else %>
+                素食
                 <% end %>
               </label>
             </div>
@@ -231,6 +263,7 @@
               <% if @language_code == "en" %>
                 (+) I'd like to add an extra guest
               <% else %>
+              （＋）我想要另增一位客人
               <% end %>
             </button>
           </div>
@@ -240,6 +273,7 @@
               <% if @language_code == "en" %>
                 Anything else you'd like us to know about?
               <% else %>
+              还有其他想让我们知道的吗？
               <% end %>
             </span>
             <%= f.text_area :extra_comments, :id => "extra-comments", :class => "text-box"%>
@@ -249,6 +283,7 @@
               <% if @language_code == "en" %>
                 Submit
               <% else %>
+              提交
               <% end %>
             </button>
           </div>
@@ -260,18 +295,21 @@
           <% if @language_code == "en" %>
             Thanks! See you at the wedding!
           <% else %>
+          谢谢，我们婚礼见！
           <% end %>
         </p>
         <p class="not-coming">
           <% if @language_code == "en" %>
             Sorry you won't be joining us. See you next time.
           <% else %>
+          很抱歉，不能参加我们的婚礼。我们下次见！
           <% end %>
         </p>
         <p class="submission-error">
           <% if @language_code == "en" %>
             An error occured, please try again.
           <% else %>
+          抱歉，出现了错误，请再试一次。
           <% end %>
         </p>
       </div>

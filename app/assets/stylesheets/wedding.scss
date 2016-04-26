@@ -164,7 +164,7 @@ label p {
 }
 
 #intro {
-  background: image-url("wedding_photos/shanghai_bw2.JPG") no-repeat center -100px / cover fixed;    
+  background: image-url("intro_bg-min.JPG") no-repeat center -100px / cover fixed;    
 }
 
 #rsvp-modal,
@@ -296,7 +296,7 @@ textarea.text-box {
 #date {
   left:0;
   right:0;
-  background: image-url("wedding_photos/min_ren_jie3.JPG") no-repeat center center fixed;
+  background: image-url("dates_bg-min.JPG") no-repeat center center fixed;
   background-size: cover;
     
 }
@@ -345,7 +345,7 @@ textarea.text-box {
 /* Photo gallery */
 
 #photos {
-  background: image-url("wedding_photos/pebble_beach3.JPG") no-repeat top center / cover fixed;    
+  background: image-url("photos_bg-min.JPG") no-repeat top center / cover fixed;    
 }
 
 #photos .section-mask {
@@ -415,6 +415,10 @@ footer {
 	text-align: center;
 }
 
+.right-aligned.photo-square.wide .photo-square-centering {
+	margin-left: -200px;
+}
+
 #photo-modal-gallery {
 	color: #fff;
 	font-size: 20px;
@@ -436,8 +440,8 @@ footer {
 }
 
 #photo-modal-gallery img {
-	max-height:600px;
-	max-width: 600px;
+	max-height:90%;
+	max-width: 90%;
 	vertical-align: middle;
 }
 

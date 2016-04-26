@@ -43,13 +43,17 @@ var main = function() {
 		$("#previous-image").off('click');
 	}
 	function showNextImage() {
+		console.log(1)
     	var nextImage = currentImage.closest("li").next();	
     	if (nextImage.length == 0) {
     		return;
     	}
+    	console.log(2)
     	var nextImageURL= nextImage.find(".photo-square").attr("href");
     	currentImage = nextImage ;
+    	console.log(3)
     	$("#photo-modal-gallery img").attr("src",nextImageURL);
+    	console.log(4, nextImageURL);
      }
 	function showPreviousImage(){
     	var previousImage = currentImage.closest("li").prev();	

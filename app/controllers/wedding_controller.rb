@@ -9,52 +9,68 @@ class WeddingController < ApplicationController
 		end
 		@image_gallery = [
 			{
-				'src': 'shanghai_outdoor1.JPG',
+				'src': 'shanghai_outdoor1.jpg',
 				'dimensions_css': 'tall' 
 			},
 			{
-				'src': 'shanghai_bw3.JPG',
+				'src': 'carmel1.jpg',
 				'dimensions_css': 'wide' 
 			},
 			{
-				'src': 'min_ren_jie1.JPG',
-				'dimensions_css': 'tall' 
-			},
-			{
-				'src': 'min_ren_jie2.JPG',
-				'dimensions_css': 'tall' 
-			},
-			{
-				'src': 'min_ren_jie5.JPG',
-				'dimensions_css': 'tall' 
-			},
-			{
-				'src': 'min_ren_jie4.JPG',
-				'dimensions_css': 'tall' 
-			},
-			{
-				'src': 'shanghai_bw4.JPG',
-				'dimensions_css': 'tall' 
-			},
-			{
-				'src': 'ming_guo2.JPG',
+				'src': 'shanghai_bw3.jpg',
 				'dimensions_css': 'wide' 
 			},
 			{
-				'src': 'ming_guo3.JPG',
+				'src': 'min_ren_jie2.jpg',
 				'dimensions_css': 'tall' 
 			},
 			{
-				'src': 'shanghai_bw1.JPG',
+				'src': 'min_ren_jie5.jpg',
 				'dimensions_css': 'tall' 
 			},
 			{
-				'src': 'ming_guo1.JPG',
+				'src': 'shanghai_indoor.jpg',
 				'dimensions_css': 'tall' 
 			},
 			{
-				'src': 'shanghai_outdoor2.JPG',
+				'src': 'shanghai_outdoors.jpg',
+				'dimensions_css': 'wide' 
+			},
+			{
+				'src': 'ming_guo2.jpg',
+				'dimensions_css': 'wide' 
+			},
+			{
+				'src': 'ming_guo3.jpg',
 				'dimensions_css': 'tall' 
+			},
+			{
+				'src': 'shanghai_bw1.jpg',
+				'dimensions_css': 'tall' 
+			},
+			{
+				'src': 'spanish_bay.jpg',
+				'dimensions_css': 'wide' 
+			},
+			{
+				'src': 'shanghai_outdoor2.jpg',
+				'dimensions_css': 'tall' 
+			},
+			{
+				'src': 'pebble_beach4.jpg',
+				'dimensions_css': 'wide' 
+			},
+			{
+				'src': 'pebble_beach_lodge.jpg',
+				'dimensions_css': 'wide' 
+			},
+			{
+				'src': 'carmel_beach.jpg',
+				'dimensions_css': 'wide right-aligned' 
+			},
+			{
+				'src': 'lone_cypress.jpg',
+				'dimensions_css': 'wide' 
 			}
 		]
 	end
