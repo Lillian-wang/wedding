@@ -47,12 +47,17 @@ h1,p,h2,h3,h4 {
 }
 
 #intro-header {
-	margin-top: 320px;
 	letter-spacing: 0.33em;
 	font-size: 50px;
 	font-weight: 700;
 	color:#fff;
 	line-height: 1em;
+}
+
+#intro-main {
+	margin-top: 320px;
+	height: 500px;
+
 }
 
 #rsvp {
@@ -157,10 +162,6 @@ label p {
 	font-weight: lighter;
 	color:#fff;
 	margin-bottom: 80px;
-}
-
-#rsvp {
-	margin-bottom: 350px;
 }
 
 #intro {

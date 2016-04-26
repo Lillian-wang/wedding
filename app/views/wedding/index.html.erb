@@ -18,31 +18,33 @@
         以宁＋瑶莉
       <% end %>
     </h1>
-  	<h1 id="intro-header">
-      <% if @language_code == "en" %>
-        We're getting married
-      <% else %>
-      我们结婚啦！
+    <div id="intro-main">
+    	<h1 id="intro-header">
+        <% if @language_code == "en" %>
+          We're getting married
+        <% else %>
+        我们结婚啦！
+        <% end %>
+      </h1>
+    	<h3 id="sub-intro-header">
+        <% if @language_code == "en" %>
+          July 23, 2016 / Lover's Point / Pacific Grove
+        <% else %>
+        2016年7月23号／情人角／Pacific Grove / 加州
+        <% end %>
+      </h3>
+      <% if @wedding_invite %>
+        <div id="rsvp">
+          <button id="rsvp-button">
+            <% if @language_code == "en" %>
+              RSVP
+            <% else %>
+            请回复
+            <% end %>
+          </button>
+        </div>
       <% end %>
-    </h1>
-  	<h3 id="sub-intro-header">
-      <% if @language_code == "en" %>
-        July 23, 2016 / Lover's Point / Pacific Grove
-      <% else %>
-      2016年7月23号／情人角／Pacific Grove / 加州
-      <% end %>
-    </h3>
-    <% if @wedding_invite %>
-      <div id="rsvp">
-        <button id="rsvp-button">
-          <% if @language_code == "en" %>
-            RSVP
-          <% else %>
-          请回复
-          <% end %>
-        </button>
-      </div>
-    <% end %>
+    </div>
   </div>
 </div>
 
