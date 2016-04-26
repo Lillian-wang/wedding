@@ -471,6 +471,14 @@ footer {
 	font-size: 30px;
 }
 
+@media only screen and (max-width: 480px) {
+
+	#photo-modal-gallery button {
+		font-size: 100px;
+	}
+	
+}
+
 .std-button {
 	background: none;
 	border: none;
