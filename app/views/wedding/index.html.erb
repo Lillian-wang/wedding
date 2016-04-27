@@ -112,13 +112,32 @@
       </h1>
       <p>
         <% if @language_code == "en" %>
-          We'll have a casual ceremony with refreshments and snacks at Lover's Point in Pacific Grove where Yining grew up followed by a lunch reception at the Beach House right next door!
+          We'll have a brief ceremony at Lover's Point in Pacific Grove where Yining grew up, followed by a lunch reception at the Beach House Restaurant right next door!
         <% else %>
-          我们将在加州Pacific Grove的情人角（以宁长大的地方）举行仪式，并会在现场提供点心和小吃，中午会在旁边的海滨小屋内进行午宴
+          我们将在加州Pacific Grove的情人角（以宁长大的地方）举行仪式，并会在现场提供点心和饮料，中午会在旁边的海滨小屋内进行午宴
         <% end %>
       </p>
     </div>
     <div id="wedding-detail-ceremony">
+      <h2>
+        <% if @language_code == "en" %>
+          Prereception
+        <% else %>
+          预接待
+        <% end %>
+      </h2>
+      <p>10:40AM - 11:00AM</p> 
+      <p>
+        <% if @language_code == "en" %>
+          Coffee, refreshments, and fruits
+        <% else %>
+          咖啡，水果和点心
+        <% end %>
+      </p>
+      <p>Lover's Point Park</p>
+     
+
+
       <h2>
         <% if @language_code == "en" %>
           Ceremony
@@ -126,7 +145,7 @@
         仪式
         <% end %>
       </h2>
-      <p>10:30AM - 12:00AM</p>
+      <p>11:00AM - 12:00AM</p>
       <a target="_blank" href="https://www.google.com/maps/place/Lovers+Point+Park/@36.6264254,-121.9187432,17z/data=!3m1!4b1!4m2!3m1!1s0x808de145db4dcb25:0x48028ef2b9b860bb">
         <p>Lover's Point Park</p>
         <p>Pacific Grove,CA</p>
@@ -328,4 +347,4 @@
   ga('create', 'UA-76863538-1', 'auto');
   ga('send', 'pageview');
 
-</script>
+</script> 
