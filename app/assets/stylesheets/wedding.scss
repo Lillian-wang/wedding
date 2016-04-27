@@ -471,7 +471,7 @@ footer {
 	font-size: 30px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-device-width:719px) and (webkit-min-device-pixel-ratio: 2) {
 
 	#photo-modal-gallery button {
 		font-size: 100px;
