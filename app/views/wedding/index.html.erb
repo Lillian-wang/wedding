@@ -213,7 +213,7 @@
               <% if @language_code == "en" %>
                 Hey <%= @wedding_invite[:primary_invitee_name] %>! Will you be joining us for our big day?
               <% else %>
-              您会来参加我们的婚礼吗？
+                尊敬的<%= @wedding_invite[:primary_invitee_name] %>, 您会来参加我们的婚礼吗？
               <% end %>
             </h2>
             <label>
