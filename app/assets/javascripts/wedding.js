@@ -133,13 +133,7 @@ var main = function() {
 
 	// Image Delay Loading
 	// Background CSS Image Loading
-	var delayLoadedBgImages = $('.lazy-load-bg');
-	delayLoadedBgImages.each(function() {
-		var el = $(this);
-		var bgImageUrl = el.data('bg-url');
-		el.css('background-image', bgImageUrl);
-
-	});
+	$('body').addClass('lazy-load-bg');
 	// Image src Loading
 	$('.delay-loaded-image').each(function() {
 		var el = $(this);

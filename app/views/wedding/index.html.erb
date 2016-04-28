@@ -81,7 +81,7 @@
   <% end %>
 </div>
 
-<div id="date" class="section lazy-load-bg" data-bg-url="url(<%= asset_path('dates_bg-min.JPG') %>">
+<div id="date" class="section">
   <div class="section-mask">
   	<h3 id="date-header">
       <% if @language_code == "en" %>
@@ -164,7 +164,7 @@
   </div>
 </div>
 
-<div id="photos" class="section lazy-load-bg" data-bg-url="url(<%= asset_path('photos_bg-min.JPG') %>">
+<div id="photos" class="section">
   <div class="section-mask">
     <div id="photos-content">
       <h1>
@@ -187,7 +187,7 @@
             <li>
               <a href="<%= asset_path('wedding_photos/' + image_info[:src]) %>" class="photo-square <%= image_info[:dimensions_css] %>">
                 <div class="photo-square-centering">
-                  <img data-delayed-src="<%= asset_path('thumbnails/' + image_info[:src]) %>" alt="Wedding Photo" class="delay-loaded-image">
+                  <img src="http://1x1px.me/FFFFFF-0.8.png" data-delayed-src="<%= asset_path('thumbnails/' + image_info[:src]) %>" alt="Wedding Photo" class="delay-loaded-image">
                 </div>
               </a>
             </li>
