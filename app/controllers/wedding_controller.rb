@@ -41,8 +41,8 @@ class WeddingController < ApplicationController
 				'dimensions_css': 'wide' 
 			},
 			{
-				'src': 'carmel_beach.jpg',
-				'dimensions_css': 'wide right-aligned' 
+				'src': 'kitchen.jpg',
+				'dimensions_css': 'wide' 
 			},
 			{
 				'src': 'shanghai_bw1.jpg',
@@ -50,7 +50,7 @@ class WeddingController < ApplicationController
 			},
 			{
 				'src': 'spanish_bay.jpg',
-				'dimensions_css': 'wide' 
+				'dimensions_css': 'wide left-aligned' 
 			},
 			{
 				'src': 'shanghai_outdoor2.jpg',
@@ -61,7 +61,7 @@ class WeddingController < ApplicationController
 				'dimensions_css': 'wide' 
 			},
 			{
-				'src': 'pebble_beach_lodge.jpg',
+				'src': 'min_ren_jie1.jpg',
 				'dimensions_css': 'wide' 
 			},
 			{
