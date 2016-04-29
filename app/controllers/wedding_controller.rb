@@ -50,7 +50,7 @@ class WeddingController < ApplicationController
 			},
 			{
 				'src': 'spanish_bay.jpg',
-				'dimensions_css': 'wide left-aligned' 
+				'dimensions_css': 'wide' 
 			},
 			{
 				'src': 'shanghai_outdoor2.jpg',
